@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ExtractVariables continueOnError="false" enabled="true" name="GetBackend">
+    <DisplayName>GetBackend</DisplayName>
+    <Properties/>
+    <JSONPayload>
+        <Variable name="name">
+            <JSONPath>$.input.name</JSONPath>
+        </Variable>
+    </JSONPayload>
+    <Source clearPayload="false">response</Source>
+</ExtractVariables>
