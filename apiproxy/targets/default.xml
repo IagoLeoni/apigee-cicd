@@ -1,11 +1,8 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml version="1.0"?>
 <TargetEndpoint name="default">
+  <Description>Mock Target API</Description>
   <PreFlow name="PreFlow">
-    <Request>
-      <Step>
-        <Name>add-cors</Name>
-      </Step>
-    </Request>
+    <Request/>
     <Response/>
   </PreFlow>
   <Flows/>
@@ -14,6 +11,6 @@
     <Response/>
   </PostFlow>
   <HTTPTargetConnection>
-    <URL>https://risk-new-backend-fk2zh4zqoq-uc.a.run.app</URL>
+    <URL>http://mocktarget.apigee.net</URL>
   </HTTPTargetConnection>
 </TargetEndpoint>

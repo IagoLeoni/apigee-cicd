@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<APIProxy revison="1" name="apigee-cicd">
+  <CreatedAt>1665707205</CreatedAt>
+  <Description>Mock Target API</Description>
+  <ProxyEndpoints>
+    <ProxyEndpoint>default</ProxyEndpoint>
+  </ProxyEndpoints>
+  <TargetEndpoints>
+    <TargetEndpoint>default</TargetEndpoint>
+  </TargetEndpoints>
+</APIProxy>

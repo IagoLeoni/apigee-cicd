@@ -1,0 +1,88 @@
+<?xml version="1.0"?>
+<ProxyEndpoint name="default">
+  <Description>Mock Target API</Description>
+  <PreFlow name="PreFlow">
+    <Request/>
+    <Response/>
+  </PreFlow>
+  <Flows>
+    <Flow name="View a personalized greeting">
+      <Condition>(proxy.pathsuffix MatchesPath &quot;/&quot;) and (request.verb = &quot;GET&quot;)</Condition>
+      <Description>View personalized greeting</Description>
+      <Request/>
+      <Response/>
+    </Flow>
+    <Flow name="Get help">
+      <Condition>(proxy.pathsuffix MatchesPath &quot;/help&quot;) and (request.verb = &quot;GET&quot;)</Condition>
+      <Description>Get help</Description>
+      <Request/>
+      <Response/>
+    </Flow>
+    <Flow name="View personalized greeting">
+      <Condition>(proxy.pathsuffix MatchesPath &quot;/user&quot;) and (request.verb = &quot;GET&quot;)</Condition>
+      <Description>View personalized greeting</Description>
+      <Request/>
+      <Response/>
+    </Flow>
+    <Flow name="View API affirmation">
+      <Condition>(proxy.pathsuffix MatchesPath &quot;/iloveapis&quot;) and (request.verb = &quot;GET&quot;)</Condition>
+      <Description>View API affirmation</Description>
+      <Request/>
+      <Response/>
+    </Flow>
+    <Flow name="View IP address">
+      <Condition>(proxy.pathsuffix MatchesPath &quot;/ip&quot;) and (request.verb = &quot;GET&quot;)</Condition>
+      <Description>View IP address</Description>
+      <Request/>
+      <Response/>
+    </Flow>
+    <Flow name="View XML response">
+      <Condition>(proxy.pathsuffix MatchesPath &quot;/xml&quot;) and (request.verb = &quot;GET&quot;)</Condition>
+      <Description>View XML response</Description>
+      <Request/>
+      <Response/>
+    </Flow>
+    <Flow name="View JSON response">
+      <Condition>(proxy.pathsuffix MatchesPath &quot;/json&quot;) and (request.verb = &quot;GET&quot;)</Condition>
+      <Description>View JSON response</Description>
+      <Request/>
+      <Response/>
+    </Flow>
+    <Flow name="View request headers and body">
+      <Condition>(proxy.pathsuffix MatchesPath &quot;/echo&quot;) and (request.verb = &quot;GET&quot;)</Condition>
+      <Description>View request headers and body</Description>
+      <Request/>
+      <Response/>
+    </Flow>
+    <Flow name="Send request and view request headers and body">
+      <Condition>(proxy.pathsuffix MatchesPath &quot;/echo&quot;) and (request.verb = &quot;POST&quot;)</Condition>
+      <Description>Send request and view request headers and body</Description>
+      <Request/>
+      <Response/>
+    </Flow>
+    <Flow name="View status code and message">
+      <Condition>(proxy.pathsuffix MatchesPath &quot;/statuscode/{code}&quot;) and (request.verb = &quot;GET&quot;)</Condition>
+      <Description>View status code and message</Description>
+      <Request/>
+      <Response/>
+    </Flow>
+    <Flow name="Validate access using basic authentication">
+      <Condition>(proxy.pathsuffix MatchesPath &quot;/auth&quot;) and (request.verb = &quot;GET&quot;)</Condition>
+      <Description>Validate access using basic authentication</Description>
+      <Request/>
+      <Response/>
+    </Flow>
+  </Flows>
+  <PostFlow name="PostFlow">
+    <Request/>
+    <Response/>
+  </PostFlow>
+  <HTTPProxyConnection>
+    <BasePath>/apigee-cicd</BasePath>
+    <VirtualHost>default</VirtualHost>
+    <VirtualHost>secure</VirtualHost>
+  </HTTPProxyConnection>
+  <RouteRule name="default">
+    <TargetEndpoint>default</TargetEndpoint>
+  </RouteRule>
+</ProxyEndpoint>

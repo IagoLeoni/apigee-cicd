@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<SpikeArrest continueOnError="false" enabled="true" name="Ratelimit">
-    <DisplayName>Ratelimit</DisplayName>
-    <Properties/>
-    <Identifier ref="verifyapikey.verify-api-key.client_id"/>
-    <Rate ref="verifyapikey.verify-api-key.apiproduct.max-rate-per-min"/>
-    <UseEffectiveCount>true</UseEffectiveCount>
-</SpikeArrest>
